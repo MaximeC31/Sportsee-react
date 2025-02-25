@@ -44,7 +44,6 @@ export const useUserInfo = (id = '12') => {
 				};
 
 				setUserInfo(dataFacade);
-				console.log('userInfo', dataFacade);
 			} catch (error) {
 				console.error('Error fetching user info:', error);
 			}

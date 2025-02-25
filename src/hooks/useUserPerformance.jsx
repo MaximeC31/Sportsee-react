@@ -36,8 +36,6 @@ export const useUserPerformance = (id = '12') => {
 
 				const transformedData = data.data.map((entry) => createFacadeObject(entry));
 				setUserPerformance(transformedData);
-
-				console.log('userPerformance', transformedData);
 			} catch (error) {
 				console.error('Error fetching user performance:', error);
 			}

@@ -21,8 +21,6 @@ export const useUserAverageSessions = (id = '12') => {
 
 				const formattedData = formatData(data);
 				setUserAverageSessions(formattedData);
-
-				console.log('userAverageSessions', formattedData);
 			} catch (error) {
 				console.error('Error fetching average sessions:', error);
 			}
